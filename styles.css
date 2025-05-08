@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+        "sd hd hd hd hd hd"
+        "sd mn mn mn mn mn"
+        "sd mn mn mn mn mn"
+        "sd mn mn mn mn mn"
+        "sd mn mn mn mn mn"
+    ;
+}
+
+header {
+    background-color: red;
+}
+
+.head {
+    grid-area: hd;
+}
+
+aside {
+    background-color: skyblue;
+}
+
+.sidebar {
+    grid-area: sd;
+}
+
+main {
+    background-color: aquamarine;
+}
+
+.content {
+    grid-area: mn;
+}
