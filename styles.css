@@ -15,16 +15,16 @@ body {
         "sd mn mn mn mn mn"
         "sd mn mn mn mn mn"
         "sd mn mn mn mn mn"
-        "sd mn mn mn mn mn"
-    ;
+        "sd mn mn mn mn mn";
 }
 
-header {
-    background-color: red;
-}
+/* header {
+} */
 
 .head {
     grid-area: hd;
+    display: flex;
+    flex-direction: column;
 }
 
 aside {
@@ -41,4 +41,60 @@ main {
 
 .content {
     grid-area: mn;
+}
+
+.top-bar {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.search-bar {
+    background-color: #e9eff6;
+    border-radius: 9999px;
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    flex: 1;
+    max-width: 600px;
+}
+
+.search-bar img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    opacity: 0.6;
+}
+
+input {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background: transparent;
+    flex: 1;
+}
+
+.right-part {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.right-part img {
+    width: 24px;
+    height: 24px;
+}
+
+.right-part .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: #f0f0f0;
+    object-fit: cover;
 }
