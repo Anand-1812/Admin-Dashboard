@@ -150,3 +150,51 @@ button {
 button:hover {
     background-color: #0d8ddb;
 }
+
+/* sidebar */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.sidebar .dashboard {
+    width: 48px;
+    height: 48px;
+}
+
+.sidebar-item {
+    margin: 10px;
+    display: flex;
+    width: inherit;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-item:hover {
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.top-part {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.bottom-bar {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
