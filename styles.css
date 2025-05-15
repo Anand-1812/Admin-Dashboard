@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: #F8F8F8;
     font-family: "Roboto", sans-serif;
     min-height: 100vh;
     display: grid;
@@ -22,11 +23,14 @@ body {
 } */
 
 .head {
-    margin: 12px;
+    /* margin: 12px; */
+    padding: 12px;
     grid-area: hd;
     display: flex;
     flex-direction: column;
     gap: 18px;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 aside {
@@ -35,10 +39,6 @@ aside {
 
 .sidebar {
     grid-area: sd;
-}
-
-main {
-    background-color: aquamarine;
 }
 
 .content {
@@ -197,4 +197,57 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     margin-left: 10px;
+}
+
+.content {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.project {
+    width: 75%;
+}
+
+.side-content {
+    width: 25%;
+    background-color: bisque;
+}
+
+.container {
+    padding: 12px;
+    display: grid;
+    grid-template-areas: 
+        "div-one div-two"
+        "div-three div-four"
+        "div-five div-six";
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(3, 150px);
+    justify-content: space-between;
+}
+
+.div {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 6px solid #f4c542;
+    min-height: 150px;
+
+}
+
+.div img {
+    width: 20px;
+    height: 20px;
+}
+
+.option {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
 }
